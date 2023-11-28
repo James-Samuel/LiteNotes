@@ -13,7 +13,10 @@ class NoteController extends Controller
      */
     public function index()
     {
-        //
+        //Here is where we pass the fetch the data from the db and pass the content to the view to display them
+
+
+
         // $userId = Auth::user()->id;
         // $notes = Note::where('user_id', $userId)->get();
         // dd($notes);
@@ -24,7 +27,7 @@ class NoteController extends Controller
         // });
         return view('notes.index')->with('notes', $notes);
     }
-    
+
     /**
      * Show the form for creating a new resource.
      */
